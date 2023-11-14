@@ -11,6 +11,42 @@
 
      <head>
      <style>
+     .buttons {
+       display: flex;
+       flex-wrap: nowrap;
+       background-color: white;
+     }
+
+     .buttons > span {
+     background-color: black;
+            color: white;
+            padding: 5px 5px;
+            text-align: center;
+            text-decoration: none;
+            display: inline;
+            margin: 2px;
+     }
+            a:visited {
+              background-color: black;
+              color: white;
+              padding: 5px 5px;
+              text-align: center;
+              text-decoration: italics;
+              display: inline;
+              margin: 10px;
+             }
+     </style>
+     </head>
+
+     <span class="buttons">
+          <span><a href="#vc">Vegtable Couscous</a></span>
+
+          <span><a href="#ctr">Classic Tomato Ragu</a></span>
+
+     </span>
+
+     <head>
+     <style>
      img {
        float: right;
        margin: 0px 0px 1px 0px;
@@ -18,15 +54,39 @@
      </style>
      </head>
 
-     <p><img src="https://live.staticflickr.com/65535/48554980792_da9c4a0a0d_b.jpg" width="225" height="150">
-<h3>1) Vegetable couscous</h3>
+     <p><img src=
+       "https://live.staticflickr.com/65535/48554980792_da9c4a0a0d_b.jpg" width="225" height="150">
 
- <h4>Ingredients</h4>
+<h3 id=vegetableCouscous>1) Vegetable couscous</h3>
+
+ <h4 id="vc">Ingredients</h4>
   <p>160ml boiling water (at school)
    <br>1 sachet of cousous (any flavour)
    <br>1 red onion
    <br>1 red pepper
-   <br>100g canned chickpeas or other source of protein (see top tips)
+   <br>100g canned chickpeas or other source of protein
+
+   <head>
+   <style>
+   .tt {
+     background-color: none;
+     color: blue;
+     padding: 5px 5px;
+     text-align: center;
+     text-decoration: none;
+   }
+       a:visited {
+         background-color: none;
+         color: blue;
+         padding: 5px 5px;
+         text-align: center;
+         text-decoration: none;
+       }
+   </style>
+   </head>
+
+   <span class="tt"><a href="#topTips">(see top tips)</a></span>
+
    <br>2 15ml spoons of parsley (optional)
    <br>50g raisins(optional)</p>
 
@@ -54,7 +114,7 @@
    <br>4) Mix the onion, pepper, chickpeas, and raisins with the couscous.
    <br>5) Sprinkle the parsley on top to serve.
 
- <h4>Top Tips</h4>
+ <h4 id="topTips">Top Tips</h4>
   <p>
       <ul>
        <li>Vary the vegetables in the couscous dish, e.g. celery, spring onion, sweetcorn, peas, olives, and/or mushrooms.</li>
@@ -100,3 +160,4 @@
 </table>
 </font>
 </body>
+
